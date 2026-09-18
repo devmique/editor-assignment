@@ -3,9 +3,9 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'Draftwork — Shared documents',
+  description: 'A quiet, document-first workspace for shared work.',
+  generator: 'Ajaia LLC interview assignment',
   icons: {
     icon: [
       {
