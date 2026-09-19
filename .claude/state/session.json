@@ -1,0 +1,56 @@
+{
+  "session_id": "session-1789781550893053800",
+  "parent_session_id": null,
+  "state": "initialized",
+  "state_version": 1,
+  "started_at": "2026-09-19T01:32:30Z",
+  "updated_at": "2026-09-19T01:32:30Z",
+  "resume_token": "resume-1789781550893053800",
+  "event_seq": 0,
+  "last_event_id": "",
+  "fork_count": 0,
+  "orchestration": {
+    "max_state_retries": 3,
+    "retry_backoff_seconds": 10
+  },
+  "cwd": "c:\\Users\\mique\\editor-assignment",
+  "project_name": "editor-assignment",
+  "prompt_seq": 0,
+  "git": {
+    "branch": "main",
+    "uncommitted_changes": 0,
+    "last_commit": "47d5d78"
+  },
+  "plans": {
+    "exists": false,
+    "last_modified": 0,
+    "wip_tasks": 0,
+    "todo_tasks": 0,
+    "pending_tasks": 0,
+    "completed_tasks": 0
+  },
+  "harness_mem": {
+    "healthy": true,
+    "last_checked": "2026-09-19T01:32:30Z",
+    "last_error": ""
+  },
+  "channels_wake": {
+    "healthy": true,
+    "last_checked": "2026-09-19T01:32:30Z",
+    "last_error": ""
+  },
+  "night_watch": {
+    "healthy": true,
+    "last_checked": "2026-09-19T01:32:30Z",
+    "last_error": ""
+  },
+  "release_candidate": {
+    "state": "not-applicable",
+    "bump": "",
+    "tag": "",
+    "age_days": 0,
+    "threshold_days": 0,
+    "last_checked": "2026-09-19T01:32:30Z"
+  },
+  "changes_this_session": []
+}
