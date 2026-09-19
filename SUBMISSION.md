@@ -1,11 +1,54 @@
 # Submission — Draftwork
 
+## Live Demo
+> **Deployment link:** _[Paste your Vercel deployment URL here]_
+> 
+> **Google Drive folder:** _[Paste your Google Drive folder link here]_
+
+## Test Accounts
+
+Two seeded accounts for testing sharing and comments:
+
+| Account | Email | Password |
+|---------|-------|----------|
+| Account 1 | miquejt13@gmail.com | Admin123 |
+| Account 2 | miquejt@gmail.com | Admin123 |
+
+### How to test sharing:
+1. Sign in as **Account 1** → create a document → click **Share** → enter `miquejt@gmail.com` → set permission to **Can edit**
+2. Sign in as **Account 2** → the shared document appears under **Shared with me**
+3. Both users can edit, leave comments, and see changes
+
+## How to Run Locally
+
+```bash
+# Clone the repo
+git clone <repo-url>
+cd editor-assignment
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.local.example .env.local
+# Edit .env.local with your Supabase credentials
+
+# Run the Supabase schema
+# Go to Supabase Dashboard → SQL Editor → paste supabase/schema.sql → Run
+
+# Start the dev server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
 ## Included Files
 
 ### Source Code
-- `app/page.tsx` — Main editor page with full Supabase integration
+- `app/page.tsx` — Dashboard with document list, search, upload
+- `app/editor/[id]/page.tsx` — Full editor with Tiptap, sharing, comments
 - `app/layout.tsx` — Root layout with metadata
-- `app/globals.css` — All styles including auth pages
+- `app/globals.css` — All styles
 - `app/login/page.tsx` — Login page
 - `app/signup/page.tsx` — Signup page
 - `app/auth/callback/route.ts` — OAuth callback handler
@@ -29,8 +72,6 @@
 - `tsconfig.json` — TypeScript configuration
 - `next.config.mjs` — Next.js configuration
 - `components.json` — shadcn/ui configuration
-- `postcss.config.mjs` — PostCSS configuration
-- `.env.local` — Environment variables (gitignored)
 
 ## What Is Working
 - Document creation, editing, renaming, and deletion
@@ -39,16 +80,16 @@
 - File upload (.txt and .md) with validation
 - Email/password authentication (signup + login)
 - Document sharing with real database persistence
+- Comments with resolve/unresolve
 - Owned vs shared document distinction
 - Search and filter functionality
 - Row Level Security enforcing access control
+- Sticky toolbar
 
 ## What Is Incomplete
 - DOCX import (shows clear error message explaining this)
 - Real-time collaboration indicators
 - Document version history
-- Comments or suggestion mode
-- Role-based permissions beyond basic edit/view
 - Dark mode
 
 ## What I Would Build Next (2-4 hours)

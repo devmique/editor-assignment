@@ -14,13 +14,13 @@ A lightweight collaborative document editor built for the Ajaia AI-Native Full S
 | Auth | Supabase Auth (email/password) |
 | UI Components | shadcn/ui (base-nova style) |
 | Icons | Lucide React |
-| Package Manager | pnpm |
+| Package Manager | npm |
 
 ## Local Setup
 
 ### Prerequisites
 - Node.js 18+
-- pnpm (`npm install -g pnpm`)
+- npm (comes with Node.js)
 - A Supabase project ([supabase.com](https://supabase.com))
 
 ### 1. Clone and install
@@ -28,7 +28,7 @@ A lightweight collaborative document editor built for the Ajaia AI-Native Full S
 ```bash
 git clone <repo-url>
 cd editor-assignment
-pnpm install
+npm install
 ```
 
 ### 2. Set up Supabase
@@ -50,15 +50,21 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 ### 4. Run the dev server
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Visit [http://localhost:3000](http://localhost:3000)
 
 ### 5. Create test accounts
 
-1. Go to `/signup` and create two accounts (e.g., `john@test.com` and `jane@test.com`)
-2. Sign in with either account to start creating and sharing documents
+Two test accounts are pre-seeded for reviewing sharing flows:
+
+| Account | Email | Password |
+|---------|-------|----------|
+| Account 1 | miquejt13@gmail.com | Admin123 |
+| Account 2 | miquejt@gmail.com | Admin123 |
+
+Or create your own at `/signup`.
 
 ## Features
 
@@ -90,7 +96,7 @@ See `ARCHITECTURE.md` for a detailed architecture note.
 Run tests with:
 
 ```bash
-pnpm test
+npm test
 ```
 
 Tests cover:
